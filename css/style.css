@@ -216,3 +216,10 @@ footer{padding:28px 6%;text-align:center;border-top:1px solid var(--card-border)
 
 /* small accessibility focus states */
 a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(0,217,255,0.12);outline-offset:2px}
+body {
+    background-image: url("../images/body.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
