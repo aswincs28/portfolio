@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Aswin C S</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-wrap">
+    <div class="header-inner">
+      <div class="logo">Aswin C S</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle">Theme</button>
+        <button class="menu-btn">☰</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-drawer hidden">
+    <div class="mobile-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="font-weight:700">Menu</div>
+        <button class="mobile-close">✕</button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section style="padding-top:120px">
+      <h2 class="section-title">Get in touch</h2>
+
+      <div class="contact-grid container">
+        <div class="contact-card">
+          <h3 style="color:var(--accent)">Contact</h3>
+          <p style="color:var(--muted)">Want to collaborate or have a project idea? Drop a message.</p>
+
+          <form id="contact-form" style="margin-top:12px">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required>
+
+            <label for="email" style="margin-top:10px">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message" style="margin-top:10px">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about the project..." required></textarea>
+
+            <button type="submit" class="contact-btn" style="margin-top:12px">Send</button>
+            <div class="form-msg" style="color:var(--muted)"></div>
+          </form>
+        </div>
+
+        <div class="contact-card">
+          <h3 style="color:var(--accent)">Other ways</h3>
+          <p style="color:var(--muted)">Email: <a href="aswinchikkucs2004@gmail.com">aswinchikkucs2004@gmail.com</a></p>
+          <p style="color:var(--muted)">GitHub: <a href="https://github.com/aswincs28" target="_blank">github.com/aswincs28</a></p>
+          <p style="color:var(--muted)">Location: Kerala, India</p>
+
+          <div style="margin-top:18px">
+            <h4 style="margin-bottom:8px;color:var(--accent)">Quick links</h4>
+            <a href="projects.html">Projects</a><br>
+            <a href="index.html">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Aswin C S · Contact</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

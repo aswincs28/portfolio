@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects | Aswin C S</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- Extra smooth fade/zoom animations --- */
+    .project-card { 
+        transition: transform .3s ease, box-shadow .3s ease; 
+    }
+    .project-card:hover { 
+        transform: translateY(-8px); 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .modal { 
+        animation: zoomIn .25s ease; 
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(.8); opacity:0; }
+      to   { transform: scale(1); opacity:1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-wrap">
+    <div class="header-inner">
+      <div class="logo">Aswin C S</div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle">🌙</button>
+        <button class="menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer hidden">
+    <div class="mobile-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="font-weight:700;font-size:18px;">Menu</div>
+        <button class="mobile-close">✕</button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <section style="padding-top:120px">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="project-grid container">
+
+        <!-- ACTIVEZONE -->
+        <article class="project-card">
+          <img src="images/project1.png" alt="ACTIVEZONE">
+          <div class="project-info">
+            <h3>ACTIVEZONE</h3>
+            <p>Full turf booking platform built using Django, PostgreSQL, and Bootstrap.</p>
+
+            <div class="card-actions">
+              <a class="learn-more" href="#" data-project="activezone">View</a>
+              <a href="https://github.com/aswincs28/ACTIVEZONE" target="_blank" class="learn-more">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- COLLMAN -->
+        <article class="project-card">
+          <img src="images/project2.png" alt="COLLMAN">
+          <div class="project-info">
+            <h3>COLLMAN</h3>
+            <p>College Management System to manage students, faculty, attendance, departments, and academic records.</p>
+
+            <div class="card-actions">
+              <a class="learn-more" href="#" data-project="collman">View</a>
+              <a href="#" class="learn-more">Notes</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BrailleBridge -->
+        <article class="project-card">
+          <img src="images/project3.png" alt="BrailleBridge">
+          <div class="project-info">
+            <h3>BrailleBridge</h3>
+            <p>AI-based Braille recognition + TTS automation using Python, OpenCV, and Flask.</p>
+
+            <div class="card-actions">
+              <a class="learn-more" href="#" data-project="braillebridge">View</a>
+              <a href="#" class="learn-more">Paper</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Backdrop -->
+  <div class="modal-backdrop" aria-hidden="true">
+
+    <!-- ACTIVEZONE MODAL -->
+    <div class="modal" id="modal-activezone" style="display:none">
+      <div class="modal-header">
+        <h3>ACTIVEZONE — Turf Booking System</h3>
+        <button class="modal-close">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <img src="images/project1.png" alt="">
+        <div class="modal-content">
+          <h4>Overview</h4>
+          <p class="modal-text">User authentication, real-time slot booking, admin panel, and booking management built using Django.</p>
+
+          <h4>Tech Stack</h4>
+          <p class="modal-text">Django · Bootstrap · PostgreSQL · JavaScript</p>
+
+          <a href="https://github.com/aswincs28/ACTIVEZONE" target="_blank" class="btn">Open Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLLMAN MODAL -->
+    <div class="modal" id="modal-collman" style="display:none">
+      <div class="modal-header">
+        <h3>COLLMAN — College Management System</h3>
+        <button class="modal-close">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <img src="images/project2.png" alt="">
+        <div class="modal-content">
+          <h4>Overview</h4>
+          <p class="modal-text">A complete system for managing students, faculty, attendance, department logs, and academic records.</p>
+
+          <h4>Tech Stack</h4>
+          <p class="modal-text">Django · Bootstrap · SQLite/PostgreSQL · JS</p>
+
+          <a href="#" class="btn">Open Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAILLEBRIDGE MODAL -->
+    <div class="modal" id="modal-braillebridge" style="display:none">
+      <div class="modal-header">
+        <h3>BrailleBridge — Braille to Speech</h3>
+        <button class="modal-close">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <img src="images/project3.png" alt="">
+        <div class="modal-content">
+          <h4>Overview</h4>
+          <p class="modal-text">Automatic Braille dot recognition system using OpenCV with real-time conversion to speech.</p>
+
+          <h4>Tech Stack</h4>
+          <p class="modal-text">Python · OpenCV · Flask · TTS</p>
+
+          <a href="#" class="btn">Research Paper</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aswin C S · Projects</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

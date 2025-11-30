@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin C S Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll("nav a");
+            links.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    if (link.hash !== "") {
+                        e.preventDefault();
+                        document.querySelector(link.hash).scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Aswin C S</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Aswin C S</span></h1>
+            <h2 class="typing-text">Full Stack Developer | AI Enthusiast | CSE Student</h2>
+            <p>I build smart and user-friendly digital solutions using modern technologies.</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="featured-projects">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>ACTIVEZONE</h3>
+                    <p>Turf booking system built with Django, Firebase, and Bootstrap.</p>
+                    <a href="#" class="learn-more">Explore →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>HYDROSENSE</h3>
+                    <p>Pocket water purity checker using IoT & real-time Firebase database.</p>
+                    <a href="#" class="learn-more">Explore →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project3.png" alt="Project 3">
+                <div class="project-info">
+                    <h3>BrailleBridge</h3>
+                    <p>AI-powered Braille recognition and voice output solution.</p>
+                    <a href="#" class="learn-more">Explore →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Aswin C S | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

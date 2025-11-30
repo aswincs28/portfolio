@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Aswin C S</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <div class="header-wrap">
+    <div class="header-inner">
+      <div class="logo">Aswin C S</div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" title="Toggle theme">Theme</button>
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile drawer (hidden by default) -->
+  <div class="mobile-drawer hidden" aria-hidden="true">
+    <div class="mobile-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="font-weight:700">Menu</div>
+        <button class="mobile-close">✕</button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <!-- click area outside panel closes drawer -->
+  </div>
+
+  <!-- content -->
+  <main>
+    <section style="padding-top:140px" id="about">
+      <div class="container" style="display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start">
+        <div style="text-align:center">
+          <img src="images/profile.jpg" alt="profile" style="width:260px;height:260px;border-radius:12px;object-fit:cover;border:4px solid var(--accent)">
+          <h3 style="margin-top:14px;color:var(--accent)">Aswin C S</h3>
+          <p style="color:var(--muted)">Full Stack Developer • AI hobbyist • KTU S6</p>
+          <div style="margin-top:10px;display:flex;gap:8px;justify-content:center">
+            <a class="btn" href="projects.html">See Projects</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p style="color:var(--muted);margin-bottom:14px">I’m a Computer Science student and full-stack developer from Kerala. I build web apps using Django and modern front-end tech. My current focus: practical AI projects, IoT prototypes, and full-stack systems that solve real problems.</p>
+
+          <h3 style="color:var(--accent);margin-bottom:8px">Skills</h3>
+          <ul style="color:var(--muted);margin-bottom:14px">
+            <li>Python, Django, Flask</li>
+            <li>HTML, CSS, JavaScript, Bootstrap</li>
+            <li>PostgreSQL, Firebase</li>
+            <li>OpenCV, basic ML workflows</li>
+          </ul>
+
+          <h3 style="color:var(--accent);margin-bottom:8px">Experience & Projects</h3>
+          <p style="color:var(--muted);margin-bottom:14px">Worked on ACTIVEZONE (turf booking system), HYDROSENSE (pocket water purity IoT), BrailleBridge (Braille to speech). I enjoy end-to-end development — from hardware/data collection to web dashboards and deployment.</p>
+
+          <h3 style="color:var(--accent);margin-bottom:8px">Education</h3>
+          <p style="color:var(--muted)">B.Tech — Computer Science, KTU (S6)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Aswin C S · Built with care</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
