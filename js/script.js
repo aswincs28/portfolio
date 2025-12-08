@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if(themeToggle) themeToggle.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
 
   // ---------- Typing animation (simple)
-  const phrases = ['Full Stack Developer', 'AI Enthusiast', 'KTU S6 Student', 'Problem Solver'];
+  const phrases = ['Full Stack Developer', 'AI Enthusiast', 'Problem Solver'];
   if(typingEl){
     let pi = 0, ch = 0, forward = true;
     setInterval(() => {
